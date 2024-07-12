@@ -1,0 +1,11 @@
+name: Test self hosted runner @srv0
+on:
+  workflow_dispatch:
+  
+jobs:
+  test-runner:
+    runs-on: srv0-runner 
+
+    steps:
+      - name: Run a echo command
+        run: echo Hello, srv0-runner is working!
